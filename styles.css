@@ -1,0 +1,76 @@
+:root{
+    --fuentePrincipal: 'Quicksand', sans-serif;
+    --fuenteForm: 'Montserrat', sans-serif;
+    --fondoForm: #000814;
+    --fondoBody: #001D3D;
+    --fondoBoton: #003566;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;                         /*1rem = 10 pixeles*/
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--fondoBody);
+    text-align: center;
+}
+h1{
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--fondoBoton);
+}
+
+/* Aspecto general del contenedor */
+.formulario{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   width: 40rem;
+   margin: auto;
+   margin-top: 10rem;
+    background-color: var(--fondoForm);
+    padding: 3rem;
+    font-family: var(--fuenteForm);
+    color: white;
+    box-shadow: 0.7rem 1.3rem 3.7rem var(--fondoForm);
+  
+}
+
+/* Aspecto general de los campos */
+.formulario__input{
+    padding: 1rem;
+    background-color: var(--fondoForm);
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--fondoBoton);
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Aspecto del botón */
+.boton{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--fondoBoton);
+    background-color: var(--fondoBoton);
+    color: white;
+    font-size: 1.7rem;
+}
+
+.boton:hover{
+    cursor: pointer; 
+}
